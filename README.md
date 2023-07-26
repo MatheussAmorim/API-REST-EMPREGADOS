@@ -1,20 +1,16 @@
 # API-REST-Empregados
 ## **Descrição**
 
-Este é um projeto de uma API desenvolvida em Groovy on Grails, que fornece endpoints para gerenciar empregados e departamentos. A API é projetada para aceitar e retornar dados no formato JSON e utiliza o banco de dados H2 como armazenamento
+Este é um projeto de uma API desenvolvida em Groovy on Grails, que fornece endpoints para gerenciar empregados e departamentos. A API é projetada para aceitar e retornar dados no formato JSON e utiliza o banco de dados H2 como armazenamento.
 
-
-
----
-
-## **Pré-requisitos**
+# **Pré-requisitos**
 Antes de executar a API, certifique-se de ter o seguinte instalado em sua máquina:
 
 * **[Grails](https://grails.org/download.html)** (versão 5.3.2 ou superior)
 * **[Java Development Kit (JDK)](https://www.oracle.com/br/java/technologies/downloads/)** (versão 8 ou superior)
----
 
-## Execução
+
+# Execução
 
 Para executar a API localmente, use o seguinte comando pelo Prompt no caminho do projeto:
 
@@ -22,8 +18,8 @@ Para executar a API localmente, use o seguinte comando pelo Prompt no caminho do
 
 A API estará disponível em http://localhost:8080/api.
 
----
-## Endpoints
+
+# Endpoints
 
 A API possui dois domínios: Empregado e Departamento. Ambos possuem os mesmos endpoints configurados conforme abaixo.
 
