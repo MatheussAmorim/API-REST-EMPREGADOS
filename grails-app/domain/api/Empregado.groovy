@@ -5,8 +5,7 @@ import java.time.LocalDate
 class Empregado {
 
     String nome
-    String sobrenome
-
+    Integer matricula
     LocalDate dataNascimento
 
     static belongsTo = [departamento: Departamento]
