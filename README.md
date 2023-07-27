@@ -32,6 +32,7 @@ A API possui dois domínios: Empregado e Departamento. Ambos possuem os mesmos e
 Os dados são salvos no banco H2, dessa forma, criando a estrutura de tabelas quando iniciar a aplicação e excluíndo quando finaliza-la.
 
 ![img.png](img.png)
+
 Acesso ao console: http://localhost:8080/API/h2-console/
 - JDBC URL: jdbc:h2:mem:devDb
 - User name: admin
