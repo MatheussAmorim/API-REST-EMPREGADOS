@@ -28,5 +28,11 @@ A API possui dois domínios: Empregado e Departamento. Ambos possuem os mesmos e
 - `POST api/empregado` - Cria um novo empregado.
 - `PUT api/empregado/{id}` -  Atualiza os detalhes de um empregado existente.
 - `DELETE api/empregado/{id}` - Remove um empregado.
+# Armazenamento
+Os dados são salvos no banco H2, dessa forma, criando a estrutura de tabelas quando iniciar a aplicação e excluíndo quando finaliza-la.
 
----
+![img.png](img.png)
+Acesso ao console: http://localhost:8080/API/h2-console/
+- JDBC URL: jdbc:h2:mem:devDb
+- User name: admin
+- Password: 123

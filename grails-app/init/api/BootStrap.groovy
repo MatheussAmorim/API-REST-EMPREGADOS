@@ -1,8 +1,16 @@
 package api
 
+import grails.converters.JSON
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+
 class BootStrap {
 
     def init = { servletContext ->
+
+        // Configuração personalizada para formatar o LocalDate no padrão "dd/MM/yyyy"
+        JSON.registerObjectMarshaller(LocalDate) { LocalDate date ->
+            return date.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))}
 
         Departamento departamento1 = new Departamento(nome: "Recursos Humanos")
         Departamento departamento2 = new Departamento(nome: "Suporte")
@@ -19,7 +27,9 @@ class BootStrap {
         empregado3.save()
         empregado4.save()
         empregado5.save()
+
     }
+
     def destroy = {
     }
 }

@@ -91,7 +91,7 @@ dataSource:
     pooled: true
     jmxExport: true
     driverClassName: org.h2.Driver
-    username: sa
+    username: admin
     password: '123'
 
 environments:
@@ -125,3 +125,4 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+
