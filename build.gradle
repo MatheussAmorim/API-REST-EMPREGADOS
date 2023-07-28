@@ -32,6 +32,7 @@ configurations {
 }
 
 dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.5'
     implementation 'org.grails.plugins:views-json:2.0.0'
     implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.5' // ou a versão correspondente do Jackson
     developmentOnly("org.springframework.boot:spring-boot-devtools")
