@@ -7,9 +7,11 @@ Este é um projeto de uma API desenvolvida em Groovy on Grails, que fornece endp
 Antes de executar a API, certifique-se de ter o seguinte instalado em sua máquina:
 
 * **[Grails](https://grails.org/download.html)** (versão 5.3.2 ou superior)
-* **[Java Development Kit (JDK)](https://www.oracle.com/br/java/technologies/downloads/)** (versão 8 ou superior)
+* **[Java Development Kit (JDK)](https://www.oracle.com/br/java/technologies/javase/javase8-archive-downloads.html)** (versão 8 ou 11)
 
+Set as variáveis de ambiente`GRAILS_HOME` apontando para o diretório de instalação do Grails.
 
+Adicione `%GRAILS_HOME%\bin;%JAVA_HOME%\bin` ao final da variável PATH.
 # Execução
 
 Para executar a API localmente, use o seguinte comando pelo Prompt no caminho do projeto:

@@ -43,8 +43,25 @@ class EmpregadoController {
         respond listaEmpregados, model: [empregadoCount: empregadoService.count()]
     }
 
-    def show(Long id) {
+    /*def show(Long id) {
+
         respond empregadoService.get(id)
+    }*/
+
+    def show(Long id) {
+        def empregado = empregadoService.get(id)
+        if (!empregado) {
+            render status: NOT_FOUND
+            return
+        }
+        def empregadoInfo = [
+                id: empregado.id,
+                departamento: empregado.departamento.id,
+                matricula: empregado.matricula,
+                nome: empregado.nome,
+                dataNascimento: empregado.dataNascimento.format(java.time.format.DateTimeFormatter.ofPattern("dd/MM/yyyy"))
+        ]
+        respond empregadoInfo
     }
 
     @Transactional
